@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/proyecto_orm</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+        <property name="show_sql">true</property>
+        <mapping class="model.Departamento"></mapping>
+        <mapping class="model.Sede"></mapping>
+        <mapping class="model.Empleado"></mapping>
+        <mapping class="model.EmpleadoDatosProf"></mapping>
+        <mapping class="model.Categoria"></mapping>
+    </session-factory>
+</hibernate-configuration>
